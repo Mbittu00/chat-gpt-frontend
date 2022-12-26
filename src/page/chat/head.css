@@ -1,0 +1,12 @@
+.head{
+  width: 90%;
+  height: 50px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #464646;
+  border-radius: 20px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
