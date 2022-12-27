@@ -1,6 +1,6 @@
 import './foot.css'
 import { BiSend } from 'react-icons/bi';
-import {useState,useEffect}from'react'
+import {useState}from'react'
 import axios from'axios'
 export default function Foot({setData}){
   let [prompt,setPrompt]=useState('')
@@ -20,10 +20,10 @@ try {
   }
   return (
     <div className='foot'>
-    <textarea className='input' 
-    placeholder='enter your question'
-    onChange={(e)=>setPrompt(e.target.value)}
-    value={prompt}></textarea>
+<input type='text' className='input'
+placeholder='Enter Your Question'
+onChange={(e)=>setPrompt(e.target.value)}
+value={prompt}/>
     <BiSend size='34' onClick={AI}/>
     </div>
     )
